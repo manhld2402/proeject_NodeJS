@@ -12,7 +12,7 @@ const storage = multer.diskStorage({
     cb(null, file.fieldname + "-" + uniqueSuffix + `.${ext}`);
   },
 });
-const upload = multer({ storage: storage }).single("uploaded_file");
+const upload = multer({ storage: storage }).single("file");
 
 module.exports.uploadFile = (req, res, next) => {
   upload(req, res, (err) => {

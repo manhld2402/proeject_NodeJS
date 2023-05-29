@@ -26,3 +26,9 @@ module.exports.insertPhoto = (
     ]
   );
 };
+module.exports.setPhoto = (photo_title, photo_content, photo_id) => {
+  return db.execute(
+    `UPADTE tb_photo SET(photo_title=?,photo_content=?) WHERE photo_id=? `,
+    [photo_title, photo_content, photo_id]
+  );
+};

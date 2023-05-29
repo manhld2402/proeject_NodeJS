@@ -5,6 +5,7 @@ import { Route, Routes } from "react-router-dom";
 import PostPage from "./components/page/PostPage";
 import BoxSignup from "./components/layout/BoxSignup";
 import BoxLogin from "./components/layout/BoxLogin";
+import DetailPage from "./components/page/DetailPage";
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
       {/* <NavBar />
       <BoxAuth /> */}
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/" element={<DetailPage />} />
         <Route path="/create" element={<PostPage />} />
       </Routes>
     </div>

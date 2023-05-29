@@ -7,3 +7,10 @@ module.exports.findByProperty = (table, key, value) => {
   sql = mysql.format(sql, inserts);
   return db.execute(sql);
 };
+module.exports.deleteByProperty = (table, key, value) => {
+  let sql = "DELETE ?? WHERE ??=?";
+  let inserts = [table, key, value];
+  sql = mysql.format(sql, inserts);
+  return db.execute(sql);
+};
+

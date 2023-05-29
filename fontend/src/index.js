@@ -7,6 +7,8 @@ import "./css/homePage.css";
 import "./css/navBar.css";
 import "./css/boxSignup.css";
 import "./css/boxLogin.css";
+import "./css/photoCard.css";
+import "./css/detailPage.css";
 import { BrowserRouter } from "react-router-dom";
 import { Provider } from "react-redux";
 import { legacy_createStore as createStore } from "redux";

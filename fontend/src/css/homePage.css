@@ -1,4 +1,4 @@
-.loader {
+.homePage .loader {
     border: 16px solid #f3f3f3; /* Light grey */
     border-top: 16px solid #3498db; /* Blue */
     border-radius: 50%;
@@ -15,11 +15,11 @@
     column-count: 7;
     column-gap: 20px;
   }
- .photoCard {
+ .homePage .photoCard {
   break-inside: avoid;
   padding-bottom: 20px;
 }
-.photo {
+.homePage .photo {
   background: #CCC;
   margin-top: 10px;
   width: 100%;
